@@ -8,6 +8,12 @@ Run `python -m http.server 4173 --directory dist` from this folder, then open ht
 
 The `dist` folder is the complete portable website. No installation or build is needed.
 
+## Vercel deployment
+
+Import this repository with its root directory set to the repository root and the framework preset set to **Other**. The root `vercel.json` sets the output directory to `dist`, so Vercel serves `dist/index.html` at `/` and its CSS, JavaScript, and images at their expected paths. No install or build command is required.
+
+If `/` returns `404 NOT_FOUND` while `/dist/index.html` loads, the repository root was published instead of the `dist` directory. Deploy the commit containing `vercel.json`; redeploying an older commit will retain the error.
+
 ## Interactions
 
 - Accessible menu category tabs with keyboard navigation.
