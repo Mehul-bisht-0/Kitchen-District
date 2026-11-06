@@ -1,0 +1,6 @@
+.tools/
+node_modules/
+*.tar.gz
+*.log
+qa/
+dist/assets/*.jxl

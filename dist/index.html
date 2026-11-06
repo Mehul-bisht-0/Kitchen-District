@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#692c32">
+  <meta name="description" content="A place for Delhi favourites, global flavours, and unhurried company. Explore Kitchen District at Hyatt Centric Janakpuri, New Delhi. Independent website pitch concept.">
+  <title>Kitchen District — Delhi at heart.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/dining-room.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="small-brand" href="#" aria-label="Kitchen District home">KD<span>NEW DELHI</span></a>
+    <nav aria-label="Main navigation" id="navigation">
+      <a href="#story">Our story</a><a href="#menu">At the table</a><a href="#space">The space</a><a href="#visit">Find us</a>
+    </nav>
+    <button class="reserve-button" data-reserve>Reserve a table <span aria-hidden="true">↗</span></button>
+    <button class="mobile-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation"><span></span><span></span></button>
+  </header>
+  <main id="main">
+    <section class="masthead" aria-labelledby="restaurant-name">
+      <div class="eyebrow masthead-meta"><span>HYATT CENTRIC JANAKPURI</span><span>A GOOD PLACE TO GATHER</span><span>NEW DELHI, INDIA</span></div>
+      <h1 id="restaurant-name">Kitchen District<span class="wordmark-dot">.</span></h1>
+      <div class="masthead-bottom"><span>Delhi at heart. A world on the plate.</span><a href="#menu">EXPLORE THE MENU <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="hero" aria-label="Welcome to Kitchen District">
+      <img src="assets/dining-room.jpg" alt="Warm wood, sculptural lighting, and tables set for dinner at Kitchen District" width="1920" height="1192" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy"><span class="eyebrow">PULL UP A CHAIR</span><h2>Some meals<br>deserve <em>more time.</em></h2><p>Familiar flavours. New discoveries.<br>And the pleasure of being here.</p></div>
+      <a class="hero-disc" href="#story" aria-label="Discover Kitchen District"><span>MAKE YOURSELF<br>AT HOME</span><span aria-hidden="true">↓</span></a>
+      <span class="photo-index">01 / THE DINING ROOM</span>
+    </section>
+    <div class="welcome-strip"><span>LOCAL SOUL</span><i aria-hidden="true">✳</i><span>GLOBAL CURIOSITY</span><i aria-hidden="true">✳</i><span>GOOD COMPANY</span><i aria-hidden="true">✳</i><span>ALWAYS A REASON</span></div>
+    <section class="story section-pad" id="story">
+      <div class="section-label"><span>01 — OUR STORY</span><span class="little-star" aria-hidden="true">✳</span></div>
+      <div class="story-main"><h2>Many flavours.<br>One <em>happy table.</em></h2><div class="story-text"><p class="large-copy">Rooted in Delhi.<br>Curious about everywhere.</p><p>Kitchen District brings the city's appetite for good food to a menu that travels. Indian favourites sit alongside global classics, with room for a new discovery or two.</p><p>Find us at Hyatt Centric Janakpuri. Come for a quiet breakfast, a long lunch, or dinner that turns into an evening.</p><a class="text-link" href="#menu">Find your next favourite <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-label"><span>02 — AT THE TABLE</span><span>A LITTLE OF HERE. A LITTLE OF EVERYWHERE.</span></div>
+      <div class="menu-intro"><h2>Follow your <em>appetite.</em></h2><p>A first look at the menu.<br>For slow mornings and everything after.</p></div>
+      <div class="menu-layout"><div class="menu-side"><span class="menu-kicker">THE KITCHEN EDIT</span><div class="menu-tabs" role="tablist" aria-label="Menu selection"><button role="tab" id="tab-morning" aria-controls="menu-panel" aria-selected="true" data-category="morning">Slow mornings <span>01</span></button><button role="tab" id="tab-comfort" aria-controls="menu-panel" aria-selected="false" tabindex="-1" data-category="comfort">Comfort in a bowl <span>02</span></button><button role="tab" id="tab-indian" aria-controls="menu-panel" aria-selected="false" tabindex="-1" data-category="indian">The Delhi spirit <span>03</span></button></div><div class="menu-drawing" aria-hidden="true"><svg viewBox="0 0 200 130" fill="none"><ellipse cx="106" cy="69" rx="55" ry="40"/><ellipse cx="106" cy="69" rx="43" ry="30"/><path d="M23 25v90M14 25v25q0 9 9 9t9-9V25M110 49q-16 10-3 23t0 20M96 42q-16 10-3 23t0 20M184 25v90M184 25q-18 12-12 42h12"/></svg><span>Made for the table.</span></div></div><div id="menu-panel" role="tabpanel" aria-labelledby="tab-morning" tabindex="0"><div id="menu-items"></div><p class="menu-note">Selected dishes from the reference menu. Offerings may change.<br>Please speak to the restaurant about pricing and dietary requirements.</p></div></div>
+      <a class="text-link menu-full" href="https://www.hyattrestaurants.com/en/new-delhi/restaurant/kitchen-district-1/menu" target="_blank" rel="noopener">Explore the official menu <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="space section-pad" id="space">
+      <div class="section-label"><span>03 — THE SPACE</span><span>THERE'S A PLACE FOR YOU HERE</span></div>
+      <div class="space-top"><h2>Settle in.<br><em>Stay a little.</em></h2><p>A table for two. A gathering of your favourite people. A moment away from the city, right in the middle of it.</p><div class="gallery-controls"><button id="gallery-prev" aria-label="Previous photograph">←</button><span id="gallery-count" aria-live="polite">01 / 02</span><button id="gallery-next" aria-label="Next photograph">→</button></div></div>
+      <button class="gallery-image" id="gallery-open" aria-label="Enlarge dining room photograph"><img id="gallery-photo" src="assets/drinks.jpg" alt="Sunlight falling across colourful chairs and a table set for a leisurely meal" width="1920" height="1280" loading="lazy"><span class="image-expand" aria-hidden="true">VIEW THE SPACE ↗</span></button>
+      <div class="gallery-caption"><span id="gallery-caption">A table worth lingering at.</span><span>PHOTOGRAPHY FROM THE OFFICIAL RESTAURANT REFERENCE</span></div>
+    </section>
+    <section class="invitation"><span class="eyebrow">THE BEST PLANS START WITH A TABLE</span><h2>Bring your people.<br><em>We'll set the table.</em></h2><button class="button-light" data-reserve>Make a date of it <span aria-hidden="true">↗</span></button><span class="invitation-star" aria-hidden="true">✳</span></section>
+    <section class="visit section-pad" id="visit"><div class="section-label"><span>04 — COME ON OVER</span><span>JANAKPURI, NEW DELHI</span></div><div class="visit-grid"><div><h2>See you<br><em>in the District.</em></h2><a class="text-link" href="https://www.google.com/maps/dir/?api=1&destination=Kitchen+District+Hyatt+Centric+Janakpuri+New+Delhi" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a></div><div class="visit-details"><div><h3>FIND US</h3><p>Kitchen District<br>2nd floor, Hyatt Centric Janakpuri<br>Janakpuri District Centre Complex<br>New Delhi, Delhi 110058</p></div><div><h3>LET'S TALK</h3><a href="tel:+917669666358">+91 76696 66358 ↗</a><p>For reservations, opening hours,<br>and a little help planning your visit.</p></div><div class="visit-foot"><span>Smart casual. Come comfortable.</span><a href="https://www.hyattrestaurants.com/en/new-delhi/restaurant/kitchen-district-1" target="_blank" rel="noopener">Visit the official restaurant page ↗</a></div></div></div></section>
+  </main>
+  <footer><div class="footer-top"><a href="#" class="footer-logo">Kitchen District.</a><span>AT HYATT CENTRIC<br>JANAKPURI, NEW DELHI</span><a href="#" class="back-top">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>INDEPENDENT WEBSITE CONCEPT · FOR PRESENTATION ONLY</span><span>Demo experience. No bookings or personal data are sent.</span></div></footer>
+  <dialog id="reservation-dialog" aria-labelledby="reserve-title"><button class="dialog-close" aria-label="Close reservation dialog">×</button><div class="reservation-content"><span class="eyebrow">AN INVITATION TO GATHER</span><h2 id="reserve-title">Your table <em>awaits.</em></h2><p class="dialog-intro">Pick a date. Bring good company.</p><div class="demo-notice">PITCH DEMO · This form previews the experience. It does not check availability or make a booking.</div><form id="reservation-form"><label>Date<input id="reservation-date" name="date" type="date" required></label><div class="form-row"><label>Time<select name="time" required><option>12:30 PM</option>1:30 PM</option>7:00 PM</option selected>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option><option>9:00 PM</option></select></label><label>Guests<select name="guests"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7+ guests</option></select></label></div><button type="submit" class="button-dark">Preview your visit <span aria-hidden="true">↗</span></button></form><div id="reservation-result" hidden aria-live="polite"></div><a class="reservation-call" href="tel:+917669666358">For a real reservation, call +91 76696 66358 ↗</a></div></dialog>
+  <dialog id="lightbox" aria-label="Restaurant photograph"><button class="dialog-close" aria-label="Close photograph">×</button><img id="lightbox-photo" alt=""><p id="lightbox-caption"></p></dialog>
+</body>
+</html>
